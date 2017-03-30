@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp>
+    <title>Inicio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/styleIndex.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="">
+        <!-- Comienzo del panel de acceso a meetlanguages, contiene panel de registro y login -->
+        <div class="access">
+            <div class="text-center title">
+                <p class="well col-sm-12" id="title">MEETLANGUAGES</p>
+            </div>
+            <div class="accessForm col-sm-offset-2 col-sm-8">
+                <div class="col-sm-7">
+                    <h2>Register</h2>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="name">Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="native">Native language:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="native" placeholder="Enter native language">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="learn">Language I want to learn:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="learn" placeholder="Enter language to learn">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Email:</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="pwd">Password:</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-5">
+                    <h2>Login</h2>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Email:</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="pwd">Password:</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comienzo de las diferentes secciones de la pagina principal-->
+        <div class="secciones">
+            <!-- Seccion Join Search Chat -->
+            <div class="text-center" id="joinSearchChat">
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/world-view.png" alt="" class=" img-responsive">
+                    <h2>JOIN!</h2>
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/right-black-arrow.png" alt="" class=" img-responsive">
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/lens.png" alt="" class=" img-responsive">
+                    <h2>SEARCH!</h2>
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/right-black-arrow.png" alt="" class=" img-responsive">
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/envelope.png" alt="" class=" img-responsive">
+                    <h2>CHAT!</h2>
+                </div>
+            </div>
+
+            <!-- Seccion TEAM, contiene imagenes de cada uno y descripcion -->
+            <div class="text-center" id="team">
+                <h1>Team</h1>
+                <div class="team">
+                    <div>
+                        <img class="" src="img/avatar.png">
+                        <h2>Antonio</h2>
+                    </div>
+                    <div>
+                        <img class="" src="img/avatar.png">
+                        <h2>Javier</h2>
+                    </div>
+                    <div>
+                        <img class="" src="img/avatar.png">
+                        <h2>Oliver</h2>
+                    </div>
+                    <div>
+                        <img class="" src="img/avatar.png">
+                        <h2>Raúl</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seccion meetings, contiene una imagen y una descripcion de los meetings -->
+            <div class="text-center" id="meetings">
+                <h1>Meetings</h1></br>
+                <p> Do you want to put into practice the language you are learning? Access our "meetings" in which we inform you of the next scheduled meetings, find out when and where will take place. These meetings are free and usually organized by our
+                    users or people you trust. Don't wait any longer! Look for the nearest and go!
+                </p>
+                <img src="img/caf.jpg" alt="cafeteria">
+            </div>
+
+            <!-- Seccion Contact, contiene un formulario de contacto -->
+            <div class="text-center" id="contact">
+                <h1>Contact</h1>
+                <div>
+                    <form class="contact">
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name...">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email...">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="text" class="form-control" id="subjet" placeholder="Subjet">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <textarea class="form-control noresize" rows="6" id="aboutMe" laceholder="Your Message..."></textarea>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Comiendo del FOOTER -->
+        <footer class="container-fluid text-center">
+            <p>© 2017 M e e t L a n g u a g e s</p>
+        </footer>
+</body>
+</html>
