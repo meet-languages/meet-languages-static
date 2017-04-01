@@ -151,3 +151,9 @@ hr {
     border-style: inset;
     border-width: 10px;
 }
+
+.imgSocial{
+    opacity: 0.3;
+    filter: alpha(opacity=30); 
+    float:right;
+}
