@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MeetLanguages</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a href="#">
+        <div class="navbar-left">
+          <span class="navbar-brand brand-name">
+          <img class="img-responsive2" src="img/mlg.png">
+          <h4 style="color: #ec7820">MEETLANGUAGES</h4>
+          </span>
+        </div>
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container-fluid text-center" id="form">
+      <div class="col-sm-6 col-sm-offset-2 text-left well">
+        <div class="text-center">
+          <h3>New meeting</h3>
+          <hr>
+          <!-- Formulario de creacion de un nuevo meeting -->
+          <form action="meetings.html" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="title">Title:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title" placeholder="Enter title">
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="aboutMe" class="col-sm-2">Description:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control noresize col-sm-10" rows="10" id="desciption"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10 text-left">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-----------------------------------SIDENAV---------------------------------->
+      <div class="col-sm-2">
+        <div id="profilePanel" class="well">
+          <h3>Hello user!</h3>
+          <hr>
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive3" id="avatar">
+          <div class="list-group text-left" >
+            <!--<a href="#" class="list-group-item"><span class="glyphicon glyphicon-plus"></span> Change avatar</a>-->
+            <a href="myprofile.html" class="list-group-item"><span class="glyphicon glyphicon-user"></span> Edit profile</a>
+            <a href="messages.html" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">3</span></a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-globe"></span> Notifications<span class="badge">7</span></a>
+            <a href="myfriends.html" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span> My Friends</a>
+            <a href="mygroups.html" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span> My Groups</a>
+          </div>
+        </div>
+        <div id="searchPanel" class="well">
+          <h3>Friends online</h3>
+          <hr>
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
+        </div>
+          <div id="searchPanel" class="well">
+            <div class="form-group">
+
+                  <h4><span class="glyphicon glyphicon-search"></span> Search:</h4>
+                  <hr>
+                  <form action="">
+                  <input type="text" name="searchAds" class="col-xs-12">
+                  </br>
+                  </br>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div id="mySidenav" class="sidenav" >
+        <a href="#" id="facebook">Facebook <img src="img/social/facebook.png" alt="" class="imgSocial"></a>
+        <a href="#" id="twitter">Twitter <img src="img/social/twitter.png" alt="" class="imgSocial"></a>
+        <a href="#" id="linkedin">Linkedin <img src="img/social/linkedin.png" alt="" class="imgSocial"></a>
+        <a href="#" id="github">Github <img src="img/social/git.png" alt="" class="imgSocial"></a>
+      </div>
+
+
+      <!-- Comiendo del FOOTER -->
+      <footer class="container-fluid text-center">
+          <p>© 2017 M e e t L a n g u a g e s</p>
+      </footer
+</body>
+</html>
