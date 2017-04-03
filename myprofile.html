@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover(); 
-    });
-    </script>
 
 
   </head>
@@ -54,14 +49,105 @@
         <div>
           <div class="media">
             <div class="media-left">
-              <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" id="avatar" title="Nombre Apellido" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">  
+              <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" id="avatar" title="Nombre Apellido">  
             </div>
             <div class="media-body">
-              <h4 class="media-heading">Left-aligned</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="media-heading">Nombre Apellido</h4>
+              <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
         <hr>
+        </div>
+        <div class="text-left">
+          <a href="edit-profile.html">
+            <button type="button" class="btn btn-primary">
+              <span class="glyphicon glyphicon glyphicon-edit"></span>
+                Edit profile
+            </button>
+          </a>
+        </div>
+        <div>
+          <div class="media">
+            <div class="media-body">
+              <h2>About me:</h2>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td>Birthday</td>
+                    <td>03/04/1990</td>
+                  </tr>
+                  <tr>
+                    <td>Sex</td>
+                    <td>Male</td>
+                  </tr>
+                  <tr>
+                    <td>Country</td>
+                    <td>Spain</td>
+                  </tr>
+                  <tr>
+                    <td>Native Language</td>
+                    <td>Spanish</td>
+                  </tr>
+                  <tr>
+                    <td>Language I want to learn</td>
+                    <td>German</td>
+                  </tr>
+                  <tr>
+                    <td>Skype</td>
+                    <td>asdasd@asd.com</td>
+                  </tr>
+                  <tr>
+                    <td>Occupation</td>
+                    <td>Student</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="media">
+            <div class="media-body">
+              <h2>What I like:</h2>
+              <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#literature">Literature</a></li>
+                <li><a data-toggle="tab" href="#music">Music</a></li>
+                <li><a data-toggle="tab" href="#films">Films</a></li>
+                <li><a data-toggle="tab" href="#series">Series</a></li>
+                <li><a data-toggle="tab" href="#sports">Sports</a></li>
+                <li><a data-toggle="tab" href="#activities">Activities</a></li>
+              </ul>
+            
+              <div class="tab-content">
+                <div id="literature" class="tab-pane fade">
+                  <ul>
+                    <li>Tales</li>
+                    <li>Terror</li>
+                    <li>Comic</li>
+                  </ul>
+                </div>
+                <div id="music" class="tab-pane fade">
+                  <ul>
+                    <li>Pop</li>
+                    <li>Rap</li>
+                    <li>Rock</li>
+                  </ul>
+                </div>
+                <div id="films" class="tab-pane fade">
+                  <p>Drama, Animation, Thriller.</p>
+                </div>
+                <div id="series" class="tab-pane fade">
+                  <p>Braking bad, The Walking Dead, House</p>
+                </div>
+                <div id="sports" class="tab-pane fade">
+                  <p>Football, Basketball, Tennis</p>
+                </div>
+                <div id="activities" class="tab-pane fade">
+                  <p>Science, Sports, Astronomy</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     
