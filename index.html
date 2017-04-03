@@ -1,126 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp>
-    <title>MeetLanguages</title>
+    <title>Inicio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleIndex.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover(); 
-    });
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
 
-
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <a href="#">
-        <div class="navbar-left">
-          <span class="navbar-brand brand-name">
-          <img class="img-responsive2" src="img/mlg.png">
-          <h4 style="color: #ec7820">MEETLANGUAGES</h4>
-          </span>
-        </div>
-        </a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="search.html">Search</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="groups.html">Groups</a></li>
-            <li><a href="meetings.html">Meetings</a></li>
-             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid text-center" id="form">
-      <div class="col-sm-6 col-sm-offset-2 text-left well">
-        <div>
-          <div class="media">
-            <div class="media-left">
-              <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" id="avatar" title="Nombre Apellido" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">  
+<body>
+        <!-- Comienzo del panel de acceso a meetlanguages, contiene panel de registro y login -->
+        <div class="access">
+            <div class="text-center title">
+                <p class="well col-sm-12" id="title">MEETLANGUAGES</p>
             </div>
-            <div class="media-body">
-              <h4 class="media-heading">Left-aligned</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="accessForm col-sm-offset-2 col-sm-8">
+                <div class="col-sm-7">
+                    <div class="text-center">
+                        <h2>Register</h2>
+                    </div>
+                    <form class="form-horizontal" action="edit-profile.html">
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="name">Name:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="native">Native language:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="native" placeholder="Enter native language">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="learn">Language I want to learn:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="learn" placeholder="Enter language to learn">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="email">Email:</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="pwd">Password:</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-group text-right  ">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-right">
+                            <div class="col-sm-offset-1  col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="text-center">
+                        <h2>Login</h2>
+                    </div>
+                    <form class="form-horizontal" action="edit-profile.html">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="email">Email:</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="pwd">Password:</label>
+                            <div class="col-sm-6">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-10 text-left">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-1 col-sm-10 text-left">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-        <hr>
         </div>
-      </div>
-    
 
+        <!-- Comienzo de las diferentes secciones de la pagina principal-->
+        <div class="secciones">
+            <!-- Seccion Join Search Chat -->
+            <div class="text-center" id="joinSearchChat">
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/world-view.png" alt="" class=" img-responsive">
+                    <h2>JOIN!</h2>
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/right-black-arrow.png" alt="" class=" img-responsive">
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/lens.png" alt="" class=" img-responsive">
+                    <h2>SEARCH!</h2>
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/right-black-arrow.png" alt="" class=" img-responsive">
+                </div>
+                <div class="col-sm-1 col-sm-offset-1">
+                    <img src="img/envelope.png" alt="" class="img-responsive">
+                    <h2>CHAT!</h2>
+                </div>
+            </div>
 
+            <!-- Seccion TEAM, contiene imagenes de cada uno y descripcion -->
+            <div class="text-center" id="team">
+                <h1>Team</h1>
+                <div class="team col-sm-12">
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="img/avatar.png">
+                        <h2>Antonio</h2>
+                        <h4>Email: aaaaa@aaaaa.com</h4>
+                        <h4>Phone: +34 231 23 12 23</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="img/avatar.png">
+                        <h2>Javier</h2>
+                        <h4>Email: aaaaa@aaaaa.com</h4>
+                        <h4>Phone: +34 231 23 12 23</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="img/avatar.png">
+                        <h2>Oliver</h2>
+                        <h4>Email: aaaaa@aaaaa.com</h4>
+                        <h4>Phone: +34 231 23 12 23</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" src="img/avatar.png">
+                        <h2>Raúl</h2>
+                        <h4>Email: aaaaa@aaaaa.com</h4>
+                        <h4>Phone: +34 231 23 12 23</h4>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Seccion meetings, contiene una imagen y una descripcion de los meetings -->
+            <div class="text-center" id="meetings">
+                <div class="col-sm-12">
+                    <h1>Meetings</h1>
+                </div>
+                <div class="col-sm-6 col-sm-offset-1">
+                    <p> Do you want to put into practice the language you are learning? Access our "meetings" in which we inform you of the next scheduled meetings, find out when and where will take place. These meetings are free and usually organized by our
+                    users or people you trust. Don't wait any longer! Look for the nearest and go!
+                </p>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1">
+                     <img src="img/caf.jpg" class="img-responsive img-circle" alt="cafeteria">
+                </div>
+            </div>
 
-      <!-----------------------------------SIDENAV---------------------------------->
-      <div class="col-sm-2">
-        <div id="profilePanel" class="well">
-          <h3>Hello user!</h3>
-          <hr>
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive3" id="avatar">
-          <div class="list-group text-left" >
-            <!--<a href="#" class="list-group-item"><span class="glyphicon glyphicon-plus"></span> Change avatar</a>-->
-            <a href="myprofile.html" class="list-group-item"><span class="glyphicon glyphicon-user"></span> Edit profile</a>
-            <a href="messages.html" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">3</span></a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-globe"></span> Notifications<span class="badge">7</span></a>
-            <a href="myfriends.html" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span> My Friends</a>
-            <a href="mygroups.html" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span> My Groups</a>
-          </div>
+            <!-- Seccion Contact, contiene un formulario de contacto -->
+            <div class="text-center" id="contact">
+                <h1>Contact</h1>
+                <div>
+                    <form class="contact">
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name...">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email...">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <input type="text" class="form-control" id="subjet" placeholder="Subjet">
+                        </div>
+                        <div class="form-group col-sm-offset-1 col-sm-10">
+                            <textarea class="form-control noresize" rows="6" id="aboutMe" laceholder="Your Message..."></textarea>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
-        <div id="searchPanel" class="well">
-          <h3>Friends online</h3>
-          <hr>
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-          <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive4" id="avatar">
-        </div>
-          <div id="searchPanel" class="well">
-            <div class="form-group">
-                
-                  <h4><span class="glyphicon glyphicon-search"></span> Search:</h4>
-                  <hr>
-                  <form action="">
-                  <input type="text" name="searchAds" class="col-xs-12">
-                  </br>
-                  </br>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-              </div>
-        </div>
-      </div>
-    </div>
 
-
-      <div id="mySidenav" class="sidenav" >
-        <a href="#" id="facebook">Facebook</a>
-        <a href="#" id="twitter">Twitter</a>
-        <a href="#" id="linkedin">Linkedin</a>
-        <a href="#" id="github">Github</a>
-      </div>
-
-
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
+        <!-- Comiendo del FOOTER -->
+        <footer class="container-fluid text-center">
+            <p>© 2017 M e e t L a n g u a g e s</p>
+        </footer>
 </body>
 </html>
