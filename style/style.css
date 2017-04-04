@@ -161,3 +161,8 @@ hr {
 .eliminar_margen {
 	margin-bottom: 0px important!;	
 }
+
+.membersGroup{
+  width: 60px;
+  margin-right: 10px;
+}
