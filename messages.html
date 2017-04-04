@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function(){
-        $('[data-toggle="popover"]').popover(); 
+        $('[data-toggle="popover"]').popover();
     });
     </script>
 
@@ -49,22 +49,120 @@
       </div>
     </nav>
 
-    <div class="container-fluid text-center" id="form">
-      <div class="col-sm-6 col-sm-offset-2 text-left well">
-        <div>
-          <div class="media">
-            <div class="media-left">
-              <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" id="avatar" title="Nombre Apellido" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">  
+      <div class="container-fluid text-center" id="form">
+        <div class="col-sm-6 col-sm-offset-2 text-left well">
+          <div>
+            <h3 class="text-center">Private messages</h3>
+            <hr>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                      <div class="media-left">
+                        <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" style = "width:60px" id="avatar" title="Ivanna Vilnanka" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Ivanna Vilnanka</h4>
+                        <p><br>2 nuevos mensajes</p>
+                      </div>
+                      <div class="media-right">
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#messages">
+                            Read more
+                        </button>
+                      </div>
+                  </h3>
+                </div>
+                <div id="messages" class="collapse">
+                  <div class="well eliminar_margen">
+                      <div class="media-left">
+                          <img src="img/avatar.png" class="media-object" style="width:45px">
+                      </div>
+                      <div class="media-body">
+                          <textarea class="form-control noresize" rows="2" id="comment"></textarea>
+                      </div>
+                      <div class="media-right">
+                        <br><button type="button" class="btn btn-warning">
+                            Send
+                        </button>
+                      </div>
+                      <br><hr>
+                      <div class = "media">
+                        <div class = "media-left">
+                          <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" style = "width:45px" id="avatar" title="Ivanna Vilnanka" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Ivanna Vilnanka<small><i> Sent on February 20, 2016</i></small></h4>
+                          <p>Hi, it's me again. Can you answer me as soon as posible, please?</p>
+                        </div>
+                      </div>
+                      <br><hr>
+                      <div class = "media">
+                        <div class = "media-left">
+                          <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" style = "width:45px" id="avatar" title="Ivanna Vilnanka" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Ivanna Vilnanka<small><i> Sent on February 18, 2016</i></small></h4>
+                          <p>Hi, Do you want to date this weekend?</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <div class="media-left">
+                    <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" style = "width:60px" id="avatar" title="Paulo Coelho" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Paulo Coelho</h4>
+                    <p><br>1 mensaje nuevo</p>
+                  </div>
+                  <div class="media-right">
+                    <br>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#messages1">
+                        Read more
+                    </button>
+                  </div>
+                </h3>
+              </div>
+              <div id="messages1" class="collapse">
+                <div class="well eliminar_margen">
+                  <div class="media-left">
+                      <img src="img/avatar.png" class="media-object" style="width:45px">
+                  </div>
+                  <div class="media-body">
+                      <textarea class="form-control noresize" rows="2" id="comment"></textarea>
+                  </div>
+                  <div class="media-right">
+                    <br><button type="button" class="btn btn-warning">
+                        Send
+                    </button>
+                  </div>
+                  <br><hr>
+                  <div class = "media">
+                    <div class = "media-left">
+                      <img src="img/avatar.png" alt="avatar_meetlanguages" class="media-object" style = "width:45px" id="avatar" title="Paulo Coelho" data-toggle="popover" data-content="sgsdfgsd" data-trigger="hover">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Paulo Coelho<small><i> Sent on February 19, 2016</i></small></h4>
+                      <p>Hey how you doing buddy?</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                </div>
+              </div>
             </div>
-            <div class="media-body">
-              <h4 class="media-heading">Left-aligned</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        <hr>
+
+          <hr>
+
         </div>
       </div>
-    
+
 
 
 
@@ -77,7 +175,7 @@
           <img src="img/avatar.png" alt="avatar_meetlanguages" class="img-responsive3" id="avatar">
           <div class="list-group text-left" >
             <!--<a href="#" class="list-group-item"><span class="glyphicon glyphicon-plus"></span> Change avatar</a>-->
-            <a href="edit-profile.html" class="list-group-item"><span class="glyphicon glyphicon-user"></span> Edit profile</a>
+            <a href="myprofile.html" class="list-group-item"><span class="glyphicon glyphicon-user"></span> Edit profile</a>
             <a href="messages.html" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="badge">3</span></a>
             <a href="#" class="list-group-item"><span class="glyphicon glyphicon-globe"></span> Notifications<span class="badge">7</span></a>
             <a href="myfriends.html" class="list-group-item"><span class="glyphicon glyphicon-th-list"></span> My Friends</a>
@@ -96,7 +194,7 @@
         </div>
           <div id="searchPanel" class="well">
             <div class="form-group">
-                
+
                   <h4><span class="glyphicon glyphicon-search"></span> Search:</h4>
                   <hr>
                   <form action="">
@@ -120,7 +218,7 @@
 
 
   <footer class="container-fluid text-center">
-    <p>© 2017 M e e t L a n g u a g e s</p>
+    <p>Footer Text</p>
   </footer>
 </body>
 </html>
