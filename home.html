@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp>
     <title>MeetLanguages</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
 
 
   </head>
@@ -32,54 +38,60 @@
 
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="home.html">Home</a></li>
             <li><a href="search.html">Search</a></li>
             <li><a href="members.html">Members</a></li>
-            <li class="active"><a href="groups.html">Groups</a></li>
+            <li><a href="groups.html">Groups</a></li>
             <li><a href="meetings.html">Meetings</a></li>
-             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+             <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Contenido principal -->
     <div class="container-fluid text-center" id="form">
       <div class="col-sm-6 col-sm-offset-2 text-left well">
-        <div class="text-center">
-          <h3>New group</h3>
+
+        <div>
+          <h3>While you were offline:</h3>
           <hr>
-          <!-- Formulario de creacion de un nuevo meeting -->
-          <form action="meetings.html" class="form-horizontal">
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="title">Title:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="title" placeholder="Enter title">
-                </div>
-                <br>
-                <br>
-                <label class="control-label col-sm-2" for="type">Type:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="type" placeholder="Enter type">
-                </div>
+          <a href="profile.html">
+          <div class="well">
+            <b>Alfonso Mendoza</b> has befriended <b>Michael Douglas</b>!
+            <div class="text-right">
+              <small><i>February 20, 2016</i></small>
             </div>
-            <div class="form-group">
-              <label for="aboutMe" class="control-label col-sm-2">Description:</label>
-              <div class="col-sm-10">
-                <textarea class="form-control noresize col-sm-10" rows="10" id="desciption"></textarea>
+          </div>
+        </a>
+        <a href="group.html">
+          <div class ="well">
+            <b>Roy Dukovsky</b> has joined the group <b>LudoSpain</b>. Click here to check it out!
+            <div class="text-right">
+              <small><i>February 19, 2016</i></small>
+            </div>
+          </div>
+          </a>
+          <a href="search.html">
+            <div class ="well">
+              <b>324</b> new English talkers have joined <b>MeetLanguajes</b>. Time meet some of them!
+              <div class="text-right">
+                <small><i>February 18, 2016</i></small>
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10 text-left">
-                <button type="submit" class="btn btn-primary">Create</button>
-                <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                  <span class="glyphicon glyphicon glyphicon-plus"></span>Send invitations
-                </button>-->
-                </div>
+          </a>
+          <a href="meeting.html">
+            <div class ="well">
+              Incoming meeting in <b>Segovia</b>. Are you coming? :-)
+              <div class="text-right">
+                <small><i>February 18, 2016</i></small>
+              </div>
             </div>
-          </form>
+          </a>
         </div>
       </div>
+
+
+
 
       <!-----------------------------------SIDENAV---------------------------------->
       <div class="col-sm-2">
