@@ -157,3 +157,7 @@ hr {
     filter: alpha(opacity=30); 
     float:right;
 }
+
+.eliminar_margen {
+	margin-bottom: 0px important!;	
+}
